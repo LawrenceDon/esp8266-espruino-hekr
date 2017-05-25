@@ -10,18 +10,18 @@
 
 代码开头的位置
 ```javascript
-var ssid = "xxxxxx"; //需要填写自己路由器的ssid
-var pwd = "xxxxxx"; //需要填写自己路由器的password
-var prodKey:"xxxxxx", //需要填写自己产品的prodKey
+var ssid = "xxxxxx" 需要填写自己路由器的ssid
+var pwd = "xxxxxx" 需要填写自己路由器的password
+prodKey:"xxxxxx" 需要填写自己产品的prodKey
 ```
 
 代码结尾的位置
 ```javascript
-//deviceInit,deviceFunction,parseAppSend,reportStatus这4个函数的内容需要开发者自己完成
-function deviceInit(){}; //初始化需要使用的GPIO和接口
-function deviceFunction(){}; //具体的设备功能在此函数中完成
-function parseAppSend(jsonData){}; //根据产品通信协议，解析从云端下发的协议数据
-function reportStatus(tcplink){}; //根据产品通信协议，上报设备当前状态
+deviceInit,deviceFunction,parseAppSend,reportStatus这4个函数的内容需要开发者自己完成
+function deviceInit() 初始化需要使用的GPIO和接口
+function deviceFunction() 具体的设备功能在此函数中完成
+function parseAppSend(jsonData) 根据产品通信协议，解析从云端下发的协议数据
+function reportStatus(tcplink) 根据产品通信协议，上报设备当前状态
 ```
 device-example.js使用的产品通信协议来自 [氦氪云入门教程04-基于氦氪主控协议的作品-SDK演示插座](http://bbs.hekr.me/forum.php?mod=viewthread&tid=74&fromuid=1)
 实际使用时只需要把ssid，pwd和prodKey修改成自己的就可以了。
