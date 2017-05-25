@@ -10,9 +10,9 @@
 
 代码开头的位置
 ```javascript
-  var ssid = "xxxxxx"; //需要填写自己路由器的ssid
-  var pwd = "xxxxxx"; //需要填写自己路由器的password
-  var prodKey:"xxxxxx", //需要填写自己产品的prodKey
+var ssid = "xxxxxx"; //需要填写自己路由器的ssid
+var pwd = "xxxxxx"; //需要填写自己路由器的password
+var prodKey:"xxxxxx", //需要填写自己产品的prodKey
 ```
 
 代码结尾的位置
@@ -25,6 +25,9 @@ function reportStatus(tcplink){}; //根据产品通信协议，上报设备当�
 ```
 device-example.js使用的产品通信协议来自 [氦氪云入门教程04-基于氦氪主控协议的作品-SDK演示插座](http://bbs.hekr.me/forum.php?mod=viewthread&tid=74&fromuid=1)
 实际使用时只需要把ssid，pwd和prodKey修改成自己的就可以了。
+
+详细的使用实例请参考
+[运行Espruino固件的Esp8266模块接入氦氪云之SDK演示插座](http://bbs.hekr.me/forum.php?mod=viewthread&tid=79)
 
 ### 注意事项：
 * 本程序支持TCP断线重连，路由器断电或者断网恢复之后，TCP会重新连接。
