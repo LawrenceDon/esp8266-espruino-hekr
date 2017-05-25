@@ -417,7 +417,6 @@ function deviceFunction() //具体的设备功能在此函数中完成
 function parseAppSend(jsonData) //根据产品通信协议，解析从云端下发的协议数据
 {
   //jsonData是一个对象，可以从中获得协议数据，示例: jsonData.params.data.cmdId, jsonData.params.data.power
- 
 }
 
 function reportStatus(tcplink) //根据产品通信协议，上报设备当前状态
